@@ -1,0 +1,2295 @@
+  [1m[35m (46.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (67.6ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (12.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (7.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (32.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (79.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (32.2ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (59.2ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `match` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (20.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (12.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 21:37:23.612966', '2020-11-13 21:37:23.612966')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:39:34 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `before_filter' for API::BaseAPIController:Class
+Did you mean?  before_action):
+  
+app/controllers/api/base_api_controller.rb:10:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:39:58 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mCACHE Player Load (0.0ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+Completed 500 Internal Server Error in 431642ms (ActiveRecord: 3.2ms | Allocations: 15168)
+
+
+  
+NoMethodError (undefined method `time' for 3:Integer
+Did you mean?  times):
+  
+app/controllers/api/v1/games_controller.rb:8:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:48:46 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms | Allocations: 3711)
+
+
+  
+NoMethodError (undefined method `time' for 5:Integer
+Did you mean?  times):
+  
+app/controllers/api/v1/games_controller.rb:9:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:48:54 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1511)
+
+
+  
+NoMethodError (undefined method `time' for 5:Integer
+Did you mean?  times):
+  
+app/controllers/api/v1/games_controller.rb:9:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:49:10 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+Completed 500 Internal Server Error in 10265ms (ActiveRecord: 0.3ms | Allocations: 5801)
+
+
+  
+NoMethodError (undefined method `time' for 5:Integer
+Did you mean?  times):
+  
+app/controllers/api/v1/games_controller.rb:9:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:49:26 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('prince', '2020-11-13 21:49:27.539694', '2020-11-13 21:49:27.539694')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('rep.', '2020-11-13 21:49:27.556252', '2020-11-13 21:49:27.556252')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.8ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('leslee', '2020-11-13 21:49:27.560804', '2020-11-13 21:49:27.560804')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('hedwig', '2020-11-13 21:49:27.565550', '2020-11-13 21:49:27.565550')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+Completed 204 No Content in 1471ms (ActiveRecord: 22.7ms | Allocations: 900315)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:50:02 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mCACHE Player Load (0.0ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `new'
+Completed 204 No Content in 36072ms (ActiveRecord: 0.7ms | Allocations: 10772)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (34.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (19.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (61.2ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (40.8ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `match` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (10.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 21:50:48.793677', '2020-11-13 21:50:48.793677')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:56:12 -0300
+  [1m[35m (5.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (12.0ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('jolyn', '2020-11-13 21:56:12.337943', '2020-11-13 21:56:12.337943')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (1.2ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('omar', '2020-11-13 21:56:12.360663', '2020-11-13 21:56:12.360663')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('nick', '2020-11-13 21:56:12.367154', '2020-11-13 21:56:12.367154')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+Completed 204 No Content in 6149ms (ActiveRecord: 24.3ms | Allocations: 18688)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:56:28 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('gail', '2020-11-13 21:56:28.418977', '2020-11-13 21:56:28.418977')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (10.4ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('genevie', '2020-11-13 21:56:28.438650', '2020-11-13 21:56:28.438650')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('amb.', '2020-11-13 21:56:28.472249', '2020-11-13 21:56:28.472249')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('harley', '2020-11-13 21:56:28.476332', '2020-11-13 21:56:28.476332')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+Completed 204 No Content in 66ms (ActiveRecord: 47.7ms | Allocations: 12204)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:56:38 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+Completed 204 No Content in 47667ms (ActiveRecord: 0.4ms | Allocations: 13048)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 18:57:30 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 3[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+Completed 204 No Content in 81615ms (ActiveRecord: 9.1ms | Allocations: 12010)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:01:24 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 3[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (1.0ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:01:24.536566', '2020-11-13 22:01:24.536566')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 29.8ms | Allocations: 20026)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'gofish_development.games_players' doesn't exist):
+  
+app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (78.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (46.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (32.5ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (29.9ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (33.6ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:05:41.120118', '2020-11-13 22:05:41.120118')[0m
+  [1m[35m (17.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (39.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (3.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (33.9ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (34.4ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (34.7ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:06:37.327407', '2020-11-13 22:06:37.327407')[0m
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (42.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (30.8ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (34.6ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (37.5ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:06:41.675779', '2020-11-13 22:06:41.675779')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:06:52 -0300
+  [1m[35m (13.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('prof.', '2020-11-13 22:06:53.133795', '2020-11-13 22:06:53.133795')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('mikel', '2020-11-13 22:06:53.141558', '2020-11-13 22:06:53.141558')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('yolonda', '2020-11-13 22:06:53.152087', '2020-11-13 22:06:53.152087')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:06:53.166861', '2020-11-13 22:06:53.166861')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (16.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (25.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 1[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.4ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (20.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 204 No Content in 229ms (ActiveRecord: 123.9ms | Allocations: 32673)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (63.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (34.9ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (30.8ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (36.4ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:08:13.130685', '2020-11-13 22:08:13.130685')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:08:18 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (4.5ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('prof.', '2020-11-13 22:08:18.634525', '2020-11-13 22:08:18.634525')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('marya', '2020-11-13 22:08:18.644171', '2020-11-13 22:08:18.644171')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:08:18.661533', '2020-11-13 22:08:18.661533')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 1[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 204 No Content in 81ms (ActiveRecord: 24.3ms | Allocations: 25388)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:09:46 -0300
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:09:56 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('marcelo', '2020-11-13 22:09:56.145672', '2020-11-13 22:09:56.145672')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (1.9ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('douglas', '2020-11-13 22:09:56.170420', '2020-11-13 22:09:56.170420')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('tanika', '2020-11-13 22:09:56.179748', '2020-11-13 22:09:56.179748')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('rosalinda', '2020-11-13 22:09:56.184076', '2020-11-13 22:09:56.184076')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:11:in `block in new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:09:56.196661', '2020-11-13 22:09:56.196661')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 2[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 5)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (2, 6)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 95ms (Views: 0.6ms | ActiveRecord: 43.8ms | Allocations: 36451)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:10 -0300
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:13 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (2.8ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 3[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (5.2ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:13.152897', '2020-11-13 22:10:13.152897')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (17.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 3[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (3, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (3, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (3, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 76ms (Views: 0.2ms | ActiveRecord: 39.7ms | Allocations: 21640)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:15 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (1.8ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 2[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:15.510245', '2020-11-13 22:10:15.510245')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (2.7ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 4[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (4, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (4, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 54ms (Views: 0.1ms | ActiveRecord: 40.4ms | Allocations: 9114)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:16 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (5.3ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 4[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:16.351715', '2020-11-13 22:10:16.351715')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 5[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.4ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (5, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (5, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (5, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (5, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 20.6ms | Allocations: 11767)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:16 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (13.5ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (7.8ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 5[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (2.4ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:16.999543', '2020-11-13 22:10:16.999543')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 6[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (6, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (6, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.9ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (6, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (6, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (6, 5)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 28.4ms | Allocations: 13085)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:17 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (2.0ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (13.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 4[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (15.5ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:17.737198', '2020-11-13 22:10:17.737198')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.8ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 7[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (7, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (7, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (7, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (7, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 80ms (Views: 0.2ms | ActiveRecord: 63.1ms | Allocations: 11763)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:18 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (3.2ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 5[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:18.484497', '2020-11-13 22:10:18.484497')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (1.8ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 8[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (8, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.4ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (8, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (8, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (8, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (8, 5)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 75ms (Views: 0.1ms | ActiveRecord: 40.1ms | Allocations: 13087)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:20 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (5.7ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (1.4ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 5[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:20.577061', '2020-11-13 22:10:20.577061')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (1.7ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 9[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (3.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (9, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (9, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (9, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (9, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (9, 5)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 65ms (Views: 0.1ms | ActiveRecord: 44.4ms | Allocations: 13085)
+
+
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:10:21 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (2.2ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `new'
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT `players`.* FROM `players` LIMIT 5[0m
+  ↳ app/controllers/api/v1/games_controller.rb:16:in `new'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:10:21.316735', '2020-11-13 22:10:21.316735')[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `new'
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 10[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (10, 1)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (11.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (10, 2)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (3.6ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (10, 3)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (10, 4)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[36mGame::HABTM_Players Create (0.2ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (10, 5)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:20:in `new'
+Completed 200 OK in 55ms (Views: 0.1ms | ActiveRecord: 34.4ms | Allocations: 13084)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (43.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (3.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (33.0ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (32.8ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:10:31.338952', '2020-11-13 22:10:31.338952')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (3.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (44.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (30.5ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (35.7ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (36.3ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateCards (20201113221622)
+  [1m[35m (33.3ms)[0m  [1m[35mCREATE TABLE `cards` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `suit` varchar(255), `rank` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113221622')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateDecks (20201113221636)
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE `decks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `card_id` bigint NOT NULL, `user_id` bigint NOT NULL, `game_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_decks_on_card_id`  (`card_id`),  INDEX `index_decks_on_user_id`  (`user_id`),  INDEX `index_decks_on_game_id`  (`game_id`), CONSTRAINT `fk_rails_fc7378f294`
+FOREIGN KEY (`card_id`)
+  REFERENCES `cards` (`id`)
+, CONSTRAINT `fk_rails_5d31349cbe`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_b4b67bdc73`
+FOREIGN KEY (`game_id`)
+  REFERENCES `games` (`id`)
+)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:24:13.433114', '2020-11-13 22:24:13.433114')[0m
+  [1m[35m (25.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (41.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (1.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (34.3ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (30.9ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (39.3ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateCards (20201113221622)
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE `cards` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `suit` varchar(255), `rank` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113221622')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateDecks (20201113221636)
+  [1m[35m (35.1ms)[0m  [1m[35mCREATE TABLE `decks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `card_id` bigint NOT NULL, `game_id` bigint NOT NULL, `player_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_decks_on_card_id`  (`card_id`),  INDEX `index_decks_on_game_id`  (`game_id`),  INDEX `index_decks_on_player_id`  (`player_id`), CONSTRAINT `fk_rails_fc7378f294`
+FOREIGN KEY (`card_id`)
+  REFERENCES `cards` (`id`)
+, CONSTRAINT `fk_rails_b4b67bdc73`
+FOREIGN KEY (`game_id`)
+  REFERENCES `games` (`id`)
+, CONSTRAINT `fk_rails_7126e32a0a`
+FOREIGN KEY (`player_id`)
+  REFERENCES `players` (`id`)
+)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113221636')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:24:16.419812', '2020-11-13 22:24:16.419812')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (5.7ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'ace', '2020-11-13 22:24:16.489557', '2020-11-13 22:24:16.489557')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'ace', '2020-11-13 22:24:16.510357', '2020-11-13 22:24:16.510357')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'ace', '2020-11-13 22:24:16.515096', '2020-11-13 22:24:16.515096')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'ace', '2020-11-13 22:24:16.532245', '2020-11-13 22:24:16.532245')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'two', '2020-11-13 22:24:16.535899', '2020-11-13 22:24:16.535899')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'two', '2020-11-13 22:24:16.539814', '2020-11-13 22:24:16.539814')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'two', '2020-11-13 22:24:16.544006', '2020-11-13 22:24:16.544006')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'two', '2020-11-13 22:24:16.547765', '2020-11-13 22:24:16.547765')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'three', '2020-11-13 22:24:16.551655', '2020-11-13 22:24:16.551655')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'three', '2020-11-13 22:24:16.555241', '2020-11-13 22:24:16.555241')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'three', '2020-11-13 22:24:16.558872', '2020-11-13 22:24:16.558872')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (2.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'three', '2020-11-13 22:24:16.562312', '2020-11-13 22:24:16.562312')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'four', '2020-11-13 22:24:16.568622', '2020-11-13 22:24:16.568622')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'four', '2020-11-13 22:24:16.572515', '2020-11-13 22:24:16.572515')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'four', '2020-11-13 22:24:16.576265', '2020-11-13 22:24:16.576265')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'four', '2020-11-13 22:24:16.580355', '2020-11-13 22:24:16.580355')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'five', '2020-11-13 22:24:16.583233', '2020-11-13 22:24:16.583233')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'five', '2020-11-13 22:24:16.586229', '2020-11-13 22:24:16.586229')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'five', '2020-11-13 22:24:16.589435', '2020-11-13 22:24:16.589435')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'five', '2020-11-13 22:24:16.592953', '2020-11-13 22:24:16.592953')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'six', '2020-11-13 22:24:16.596538', '2020-11-13 22:24:16.596538')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'six', '2020-11-13 22:24:16.600127', '2020-11-13 22:24:16.600127')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'six', '2020-11-13 22:24:16.603720', '2020-11-13 22:24:16.603720')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'six', '2020-11-13 22:24:16.607417', '2020-11-13 22:24:16.607417')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'seven', '2020-11-13 22:24:16.611002', '2020-11-13 22:24:16.611002')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'seven', '2020-11-13 22:24:16.614557', '2020-11-13 22:24:16.614557')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'seven', '2020-11-13 22:24:16.618199', '2020-11-13 22:24:16.618199')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'seven', '2020-11-13 22:24:16.621755', '2020-11-13 22:24:16.621755')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'eight', '2020-11-13 22:24:16.624910', '2020-11-13 22:24:16.624910')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'eight', '2020-11-13 22:24:16.636508', '2020-11-13 22:24:16.636508')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'eight', '2020-11-13 22:24:16.639630', '2020-11-13 22:24:16.639630')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'eight', '2020-11-13 22:24:16.642968', '2020-11-13 22:24:16.642968')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'nine', '2020-11-13 22:24:16.646737', '2020-11-13 22:24:16.646737')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'nine', '2020-11-13 22:24:16.650332', '2020-11-13 22:24:16.650332')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'nine', '2020-11-13 22:24:16.654398', '2020-11-13 22:24:16.654398')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'nine', '2020-11-13 22:24:16.658035', '2020-11-13 22:24:16.658035')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'ten', '2020-11-13 22:24:16.662163', '2020-11-13 22:24:16.662163')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'ten', '2020-11-13 22:24:16.665669', '2020-11-13 22:24:16.665669')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'ten', '2020-11-13 22:24:16.669233', '2020-11-13 22:24:16.669233')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'ten', '2020-11-13 22:24:16.672959', '2020-11-13 22:24:16.672959')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'jack', '2020-11-13 22:24:16.676408', '2020-11-13 22:24:16.676408')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'jack', '2020-11-13 22:24:16.679836', '2020-11-13 22:24:16.679836')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'jack', '2020-11-13 22:24:16.683323', '2020-11-13 22:24:16.683323')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'jack', '2020-11-13 22:24:16.687412', '2020-11-13 22:24:16.687412')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'queen', '2020-11-13 22:24:16.690960', '2020-11-13 22:24:16.690960')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'queen', '2020-11-13 22:24:16.694488', '2020-11-13 22:24:16.694488')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'queen', '2020-11-13 22:24:16.697991', '2020-11-13 22:24:16.697991')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'queen', '2020-11-13 22:24:16.701732', '2020-11-13 22:24:16.701732')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('clubs', 'king', '2020-11-13 22:24:16.705492', '2020-11-13 22:24:16.705492')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'king', '2020-11-13 22:24:16.709305', '2020-11-13 22:24:16.709305')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('hearts', 'king', '2020-11-13 22:24:16.713094', '2020-11-13 22:24:16.713094')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `created_at`, `updated_at`) VALUES ('spades', 'king', '2020-11-13 22:24:16.716629', '2020-11-13 22:24:16.716629')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (13.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (82.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_development`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (2.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `gofish_test`[0m
+  ↳ lib/tasks/recreate.rake:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE `gofish_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `gofish_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ lib/tasks/recreate.rake:9:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5969387370258395055', 0)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreatePlayers (20201113210547)
+  [1m[35m (47.0ms)[0m  [1m[35mCREATE TABLE `players` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113210547')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateGames (20201113211635)
+  [1m[35m (32.8ms)[0m  [1m[35mCREATE TABLE `games` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211635')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to GamesPlayers (20201113211846)
+  [1m[35m (33.5ms)[0m  [1m[35mCREATE TABLE `games_players` (`game_id` bigint NOT NULL, `player_id` bigint NOT NULL,  INDEX `index_games_players_on_game_id`  (`game_id`),  INDEX `index_games_players_on_player_id`  (`player_id`))[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113211846')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateCards (20201113221622)
+  [1m[35m (31.4ms)[0m  [1m[35mCREATE TABLE `cards` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `suit` varchar(255), `rank` varchar(255), `suit_rank` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (18.7ms)[0m  [1m[35mCREATE  INDEX `index_cards_on_suit_rank`  ON `cards` (`suit_rank`) [0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113221622')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+Migrating to CreateDecks (20201113221636)
+  [1m[35m (39.3ms)[0m  [1m[35mCREATE TABLE `decks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `card_id` bigint NOT NULL, `game_id` bigint NOT NULL, `player_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_decks_on_card_id`  (`card_id`),  INDEX `index_decks_on_game_id`  (`game_id`),  INDEX `index_decks_on_player_id`  (`player_id`), CONSTRAINT `fk_rails_fc7378f294`
+FOREIGN KEY (`card_id`)
+  REFERENCES `cards` (`id`)
+, CONSTRAINT `fk_rails_b4b67bdc73`
+FOREIGN KEY (`game_id`)
+  REFERENCES `games` (`id`)
+, CONSTRAINT `fk_rails_7126e32a0a`
+FOREIGN KEY (`player_id`)
+  REFERENCES `players` (`id`)
+)[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201113221636')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-11-13 22:35:58.522733', '2020-11-13 22:35:58.522733')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5969387370258395055')[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:12:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'ace', 'clubs_ace', '2020-11-13 22:35:58.623214', '2020-11-13 22:35:58.623214')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'ace', 'diamonds_ace', '2020-11-13 22:35:58.646416', '2020-11-13 22:35:58.646416')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'ace', 'hearts_ace', '2020-11-13 22:35:58.651007', '2020-11-13 22:35:58.651007')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'ace', 'spades_ace', '2020-11-13 22:35:58.654484', '2020-11-13 22:35:58.654484')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'two', 'clubs_two', '2020-11-13 22:35:58.657696', '2020-11-13 22:35:58.657696')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'two', 'diamonds_two', '2020-11-13 22:35:58.661010', '2020-11-13 22:35:58.661010')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'two', 'hearts_two', '2020-11-13 22:35:58.664313', '2020-11-13 22:35:58.664313')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'two', 'spades_two', '2020-11-13 22:35:58.667880', '2020-11-13 22:35:58.667880')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'three', 'clubs_three', '2020-11-13 22:35:58.671506', '2020-11-13 22:35:58.671506')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'three', 'diamonds_three', '2020-11-13 22:35:58.675253', '2020-11-13 22:35:58.675253')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'three', 'hearts_three', '2020-11-13 22:35:58.678511', '2020-11-13 22:35:58.678511')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'three', 'spades_three', '2020-11-13 22:35:58.681811', '2020-11-13 22:35:58.681811')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'four', 'clubs_four', '2020-11-13 22:35:58.685888', '2020-11-13 22:35:58.685888')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'four', 'diamonds_four', '2020-11-13 22:35:58.689136', '2020-11-13 22:35:58.689136')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'four', 'hearts_four', '2020-11-13 22:35:58.692417', '2020-11-13 22:35:58.692417')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'four', 'spades_four', '2020-11-13 22:35:58.695685', '2020-11-13 22:35:58.695685')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'five', 'clubs_five', '2020-11-13 22:35:58.699328', '2020-11-13 22:35:58.699328')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'five', 'diamonds_five', '2020-11-13 22:35:58.702971', '2020-11-13 22:35:58.702971')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'five', 'hearts_five', '2020-11-13 22:35:58.706752', '2020-11-13 22:35:58.706752')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'five', 'spades_five', '2020-11-13 22:35:58.710591', '2020-11-13 22:35:58.710591')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'six', 'clubs_six', '2020-11-13 22:35:58.714681', '2020-11-13 22:35:58.714681')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'six', 'diamonds_six', '2020-11-13 22:35:58.719109', '2020-11-13 22:35:58.719109')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'six', 'hearts_six', '2020-11-13 22:35:58.722541', '2020-11-13 22:35:58.722541')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'six', 'spades_six', '2020-11-13 22:35:58.726036', '2020-11-13 22:35:58.726036')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'seven', 'clubs_seven', '2020-11-13 22:35:58.729444', '2020-11-13 22:35:58.729444')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'seven', 'diamonds_seven', '2020-11-13 22:35:58.733430', '2020-11-13 22:35:58.733430')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'seven', 'hearts_seven', '2020-11-13 22:35:58.736842', '2020-11-13 22:35:58.736842')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'seven', 'spades_seven', '2020-11-13 22:35:58.748188', '2020-11-13 22:35:58.748188')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'eight', 'clubs_eight', '2020-11-13 22:35:58.752953', '2020-11-13 22:35:58.752953')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'eight', 'diamonds_eight', '2020-11-13 22:35:58.757695', '2020-11-13 22:35:58.757695')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'eight', 'hearts_eight', '2020-11-13 22:35:58.762018', '2020-11-13 22:35:58.762018')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'eight', 'spades_eight', '2020-11-13 22:35:58.766249', '2020-11-13 22:35:58.766249')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'nine', 'clubs_nine', '2020-11-13 22:35:58.771068', '2020-11-13 22:35:58.771068')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'nine', 'diamonds_nine', '2020-11-13 22:35:58.774757', '2020-11-13 22:35:58.774757')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'nine', 'hearts_nine', '2020-11-13 22:35:58.778723', '2020-11-13 22:35:58.778723')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'nine', 'spades_nine', '2020-11-13 22:35:58.781997', '2020-11-13 22:35:58.781997')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'ten', 'clubs_ten', '2020-11-13 22:35:58.785602', '2020-11-13 22:35:58.785602')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'ten', 'diamonds_ten', '2020-11-13 22:35:58.789027', '2020-11-13 22:35:58.789027')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'ten', 'hearts_ten', '2020-11-13 22:35:58.792009', '2020-11-13 22:35:58.792009')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'ten', 'spades_ten', '2020-11-13 22:35:58.795204', '2020-11-13 22:35:58.795204')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'jack', 'clubs_jack', '2020-11-13 22:35:58.798338', '2020-11-13 22:35:58.798338')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'jack', 'diamonds_jack', '2020-11-13 22:35:58.801686', '2020-11-13 22:35:58.801686')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'jack', 'hearts_jack', '2020-11-13 22:35:58.804819', '2020-11-13 22:35:58.804819')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'jack', 'spades_jack', '2020-11-13 22:35:58.808252', '2020-11-13 22:35:58.808252')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'queen', 'clubs_queen', '2020-11-13 22:35:58.811308', '2020-11-13 22:35:58.811308')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'queen', 'diamonds_queen', '2020-11-13 22:35:58.814745', '2020-11-13 22:35:58.814745')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'queen', 'hearts_queen', '2020-11-13 22:35:58.818052', '2020-11-13 22:35:58.818052')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'queen', 'spades_queen', '2020-11-13 22:35:58.820994', '2020-11-13 22:35:58.820994')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('clubs', 'king', 'clubs_king', '2020-11-13 22:35:58.824468', '2020-11-13 22:35:58.824468')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('diamonds', 'king', 'diamonds_king', '2020-11-13 22:35:58.827552', '2020-11-13 22:35:58.827552')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('hearts', 'king', 'hearts_king', '2020-11-13 22:35:58.831091', '2020-11-13 22:35:58.831091')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO `cards` (`suit`, `rank`, `suit_rank`, `created_at`, `updated_at`) VALUES ('spades', 'king', 'spades_king', '2020-11-13 22:35:58.834363', '2020-11-13 22:35:58.834363')[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/recreate.rake:13:in `block (2 levels) in <main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:46:12 -0300
+  [1m[35m (21.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (16.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:46:15 -0300
+Processing by API::V1::GamesController#new as JSON
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1504)
+
+
+  
+NameError (uninitialized constant Services):
+  
+app/controllers/api/v1/games_controller.rb:5:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:46:34 -0300
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:46:42 -0300
+Processing by API::V1::GamesController#new as JSON
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1744)
+
+
+  
+NameError (uninitialized constant API::V1::GamesController::Services):
+  
+app/controllers/api/v1/games_controller.rb:5:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:47:46 -0300
+  [1m[35m (33.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:47:51 -0300
+Processing by API::V1::GamesController#new as JSON
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 1546)
+
+
+  
+NameError (uninitialized constant Services):
+  
+app/controllers/api/v1/games_controller.rb:5:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:49:10 -0300
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:49:13 -0300
+Processing by API::V1::GamesController#new as JSON
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 448)
+
+
+  
+Zeitwerk::NameError (expected file /Users/iltongarcia/Projects/jobs_challenges/GoFishDeckCardAPI/app/services/game_runner.rb to define constant GameRunner, but didn't):
+  
+app/controllers/api/v1/games_controller.rb:5:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:49:21 -0300
+Processing by API::V1::GamesController#new as JSON
+Completed 500 Internal Server Error in 17367ms (ActiveRecord: 0.0ms | Allocations: 10037)
+
+
+  
+NameError (uninitialized constant GameRunner):
+  
+app/controllers/api/v1/games_controller.rb:5:in `new'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:49:40 -0300
+  
+NoMethodError (undefined method `respond_to' for API::BaseAPIController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/base_api_controller.rb:8:in `<class:BaseAPIController>'
+app/controllers/api/base_api_controller.rb:7:in `<module:API>'
+app/controllers/api/base_api_controller.rb:2:in `<main>'
+app/controllers/api/v1/games_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/games_controller.rb:2:in `<module:API>'
+app/controllers/api/v1/games_controller.rb:1:in `<main>'
+Started POST "/api/v1/games" for 127.0.0.1 at 2020-11-13 19:49:41 -0300
+Processing by API::V1::GamesController#new as JSON
+  [1m[36mPlayer Load (50.9ms)[0m  [1m[34mSELECT `players`.* FROM `players`[0m
+  ↳ app/services/game_runner.rb:3:in `setup'
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[36mPlayer Create (1.5ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('claudine', '2020-11-13 22:49:42.423016', '2020-11-13 22:49:42.423016')[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('edmundo', '2020-11-13 22:49:42.432388', '2020-11-13 22:49:42.432388')[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('olympia', '2020-11-13 22:49:42.441715', '2020-11-13 22:49:42.441715')[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('miss', '2020-11-13 22:49:42.447116', '2020-11-13 22:49:42.447116')[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO `players` (`name`, `created_at`, `updated_at`) VALUES ('andres', '2020-11-13 22:49:42.453967', '2020-11-13 22:49:42.453967')[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:9:in `block in setup'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:17:in `setup'
+  [1m[36mGame Create (0.6ms)[0m  [1m[32mINSERT INTO `games` (`created_at`, `updated_at`) VALUES ('2020-11-13 22:49:42.472423', '2020-11-13 22:49:42.472423')[0m
+  ↳ app/services/game_runner.rb:17:in `setup'
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:17:in `setup'
+  [1m[36mPlayer Load (17.5ms)[0m  [1m[34mSELECT `players`.* FROM `players` INNER JOIN `games_players` ON `players`.`id` = `games_players`.`player_id` WHERE `games_players`.`game_id` = 1[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[35m (8.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[36mGame::HABTM_Players Create (0.5ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 1)[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 2)[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[36mGame::HABTM_Players Create (0.3ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 3)[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[36mGame::HABTM_Players Create (0.4ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 4)[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[36mGame::HABTM_Players Create (0.5ms)[0m  [1m[32mINSERT INTO `games_players` (`game_id`, `player_id`) VALUES (1, 5)[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/game_runner.rb:18:in `setup'
+Completed 200 OK in 630ms (Views: 0.3ms | ActiveRecord: 184.4ms | Allocations: 241062)
+
+
