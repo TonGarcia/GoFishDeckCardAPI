@@ -19,15 +19,17 @@ class GameRunnerService
     game.save
 
     cards = Card.all
+    deck_a = cards.to_a
 
     players.each do |player|
-
-    end
-
-    if players.length == 2
-      # 7 cards if 2 players
-    else
-      # 5 cards if more players
+      #get random card
+      if players.length == 2
+        # 7 cards if 2 players
+        # player.deck << deck_a[rand(0..deck_a.length)]
+      else
+        # 5 cards if more players
+      end
+      player.deck << deck_a[rand(0..deck_a.length)]
     end
 
     game
