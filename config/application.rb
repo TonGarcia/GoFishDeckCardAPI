@@ -33,5 +33,10 @@ module GoFish
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Load Services files
+    config.autoload_paths += %W(#{config.root}/app/services)
+
+    # config.middleware.insert_after ActiveRecord::QueryCache, ActionDispatch::Cookies
   end
 end

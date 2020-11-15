@@ -32,96 +32,96 @@ RSpec.describe "/cards", type: :request do
     {}
   }
 
-  describe "GET /index" do
-    it "renders a successful response" do
-      Card.create! valid_attributes
-      get cards_url, headers: valid_headers, as: :json
-      expect(response).to be_successful
-    end
-  end
-
-  describe "GET /show" do
-    it "renders a successful response" do
-      card = Card.create! valid_attributes
-      get card_url(card), as: :json
-      expect(response).to be_successful
-    end
-  end
-
-  describe "POST /create" do
-    context "with valid parameters" do
-      it "creates a new Card" do
-        expect {
-          post cards_url,
-               params: { card: valid_attributes }, headers: valid_headers, as: :json
-        }.to change(Card, :count).by(1)
-      end
-
-      it "renders a JSON response with the new card" do
-        post cards_url,
-             params: { card: valid_attributes }, headers: valid_headers, as: :json
-        expect(response).to have_http_status(:created)
-        expect(response.content_type).to match(a_string_including("application/json"))
-      end
-    end
-
-    context "with invalid parameters" do
-      it "does not create a new Card" do
-        expect {
-          post cards_url,
-               params: { card: invalid_attributes }, as: :json
-        }.to change(Card, :count).by(0)
-      end
-
-      it "renders a JSON response with errors for the new card" do
-        post cards_url,
-             params: { card: invalid_attributes }, headers: valid_headers, as: :json
-        expect(response).to have_http_status(:unprocessable_entity)
-        expect(response.content_type).to eq("application/json")
-      end
-    end
-  end
-
-  describe "PATCH /update" do
-    context "with valid parameters" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
-
-      it "updates the requested card" do
-        card = Card.create! valid_attributes
-        patch card_url(card),
-              params: { card: invalid_attributes }, headers: valid_headers, as: :json
-        card.reload
-        skip("Add assertions for updated state")
-      end
-
-      it "renders a JSON response with the card" do
-        card = Card.create! valid_attributes
-        patch card_url(card),
-              params: { card: invalid_attributes }, headers: valid_headers, as: :json
-        expect(response).to have_http_status(:ok)
-        expect(response.content_type).to eq("application/json")
-      end
-    end
-
-    context "with invalid parameters" do
-      it "renders a JSON response with errors for the card" do
-        card = Card.create! valid_attributes
-        patch card_url(card),
-              params: { card: invalid_attributes }, headers: valid_headers, as: :json
-        expect(response).to have_http_status(:unprocessable_entity)
-        expect(response.content_type).to eq("application/json")
-      end
-    end
-  end
-
-  describe "DELETE /destroy" do
-    it "destroys the requested card" do
-      card = Card.create! valid_attributes
-      expect {
-        delete card_url(card), headers: valid_headers, as: :json
-      }.to change(Card, :count).by(-1)
-    end
-  end
+  # describe "GET /index" do
+  #   it "renders a successful response" do
+  #     Card.create! valid_attributes
+  #     get cards_url, headers: valid_headers, as: :json
+  #     expect(response).to be_successful
+  #   end
+  # end
+  #
+  # describe "GET /show" do
+  #   it "renders a successful response" do
+  #     card = Card.create! valid_attributes
+  #     get card_url(card), as: :json
+  #     expect(response).to be_successful
+  #   end
+  # end
+  #
+  # describe "POST /create" do
+  #   context "with valid parameters" do
+  #     it "creates a new Card" do
+  #       expect {
+  #         post cards_url,
+  #              params: { card: valid_attributes }, headers: valid_headers, as: :json
+  #       }.to change(Card, :count).by(1)
+  #     end
+  #
+  #     it "renders a JSON response with the new card" do
+  #       post cards_url,
+  #            params: { card: valid_attributes }, headers: valid_headers, as: :json
+  #       expect(response).to have_http_status(:created)
+  #       expect(response.content_type).to match(a_string_including("application/json"))
+  #     end
+  #   end
+  #
+  #   context "with invalid parameters" do
+  #     it "does not create a new Card" do
+  #       expect {
+  #         post cards_url,
+  #              params: { card: invalid_attributes }, as: :json
+  #       }.to change(Card, :count).by(0)
+  #     end
+  #
+  #     it "renders a JSON response with errors for the new card" do
+  #       post cards_url,
+  #            params: { card: invalid_attributes }, headers: valid_headers, as: :json
+  #       expect(response).to have_http_status(:unprocessable_entity)
+  #       expect(response.content_type).to eq("application/json")
+  #     end
+  #   end
+  # end
+  #
+  # describe "PATCH /update" do
+  #   context "with valid parameters" do
+  #     let(:new_attributes) {
+  #       skip("Add a hash of attributes valid for your model")
+  #     }
+  #
+  #     it "updates the requested card" do
+  #       card = Card.create! valid_attributes
+  #       patch card_url(card),
+  #             params: { card: invalid_attributes }, headers: valid_headers, as: :json
+  #       card.reload
+  #       skip("Add assertions for updated state")
+  #     end
+  #
+  #     it "renders a JSON response with the card" do
+  #       card = Card.create! valid_attributes
+  #       patch card_url(card),
+  #             params: { card: invalid_attributes }, headers: valid_headers, as: :json
+  #       expect(response).to have_http_status(:ok)
+  #       expect(response.content_type).to eq("application/json")
+  #     end
+  #   end
+  #
+  #   context "with invalid parameters" do
+  #     it "renders a JSON response with errors for the card" do
+  #       card = Card.create! valid_attributes
+  #       patch card_url(card),
+  #             params: { card: invalid_attributes }, headers: valid_headers, as: :json
+  #       expect(response).to have_http_status(:unprocessable_entity)
+  #       expect(response.content_type).to eq("application/json")
+  #     end
+  #   end
+  # end
+  #
+  # describe "DELETE /destroy" do
+  #   it "destroys the requested card" do
+  #     card = Card.create! valid_attributes
+  #     expect {
+  #       delete card_url(card), headers: valid_headers, as: :json
+  #     }.to change(Card, :count).by(-1)
+  #   end
+  # end
 end

@@ -29,7 +29,7 @@ class GameRunnerService
       else
         # 5 cards if more players
       end
-      player.deck << deck_a[rand(0..deck_a.length)]
+      # player.deck << deck_a[rand(0..deck_a.length)]
     end
 
     game
